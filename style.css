@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    
+   
+}
+
+html{
+    scroll-behavior: smooth;
+    
+    
+}
+
+.grid-container{ 
+    margin: auto;
+    max-width: 1600px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .2) ;
+    background-color: white;
+}
+
+
+.col-1{width: 25%;}
+.col-2{width: 50%;}
+.col-3{width: 75%;}
+.col-4{width: 100%;}
+
+
+
+/* .............................Header Starts.................................. */
+                                             
+                                                
+                                            
+                                                .row{
+                                                    display: flex;
+                                                   
+                                                  
+                                                }
+
+
+                                                #logo{
+                                                    width: 250px;
+                                                    padding: 10px;
+                                    
+                                                
+                                                }
+
+                                                .icon{
+                                                    display: none;
+                                                }
+                                               
+
+                                                nav ul{
+                                                    display: flex; 
+                                                    justify-content: flex-end;
+                                                    margin-top: 23px;
+                                                    gap: 35px;
+                                                    padding-right: 10px;
+                                                
+                                                }
+
+
+                                                .active{
+                                                    background-color: #FF5200;
+                                                    color: white!important;   
+                                                   
+                                                }
+
+
+
+
+                                                nav ul li a{
+                                                    color: black;
+                                                    text-transform: uppercase;
+                                                    font-weight: bold;
+                                                    padding: 10px;
+                                                    margin-top: 10px;
+                                                    border-radius: 10px;
+                                                    transition: all .4s;
+                                                
+                                                        
+                                                }
+                                                
+                                                nav ul li a:hover{
+                                                    background-color: #FF5200;
+                                                    color: white;
+                                                    
+                                                }
+/* .............................Header Ends.................................. */
+
+
+
+
+/* .............................Profile Starts .................................. */
+
+
+                                            .profile{
+
+                                            background: url("images/profile1.jpg") no-repeat center;
+                                            -webkit-background-size: cover;
+                                            -moz-background-size: cover;
+                                            -o-background-size: cover;
+                                            height: 700px;
+                                            position: relative;
+                                            background-attachment: fixed;
+                                            
+                                                
+
+                                            }
+
+
+                                            .profile::before{
+                                                content: "";
+                                            position: absolute;
+                                            left: 0; right: 0;
+                                            top: 0; bottom: 0;
+                                            background: rgba(0,0,0, 0.4);
+                                            }
+
+                                            .profile-contents{
+                                                position: absolute;
+                                                top: 25%;
+                                                left: 15%;
+                                                justify-content: center;
+                                                background-color: rgba(68, 157, 226, .5) ;
+                                                padding: 50px;
+                                                border-radius: 20px
+                                            
+                                                
+                                            }
+
+                                            .profile-contents p{
+                                                background-color: #FF5200;
+                                                padding: 10px;
+                                                font-size: 2rem;
+                                                border-radius: 5px;
+                                            }
+
+                                            #name{
+                                                color: white;
+                                                font-weight: bold;
+                                                font-size: 2.5rem;
+                                                font-family: Georgia, 'Times New Roman', Times, serif;
+                                            }
+
+                                            .profile-contents h1{
+                                                background-color: #FF5200;
+                                                padding: 10px;
+                                                font-size: 2.5rem;
+                                                border-radius: 5px;
+                                                margin-top: 15px;
+                                                color: white;
+                                                text-align: center;
+                                                font-family: Georgia, 'Times New Roman', Times, serif;
+
+                                            }
+
+                                            .profile-contents button{
+                                                background-color: #15202B;
+                                                padding: 5px 10px;
+                                                font-size: 2.5rem;
+                                                border-radius: 10px;
+                                                margin-top: 15px;
+                                                color: white;
+                                                text-align: center;
+                                                border: none;
+                                            margin-left: 120px;
+                                            cursor: pointer;
+                                            transition: .4s;
+                                            display: block;
+                                            margin: 8px auto;
+                                            
+                                            }
+                                            .profile-contents button:hover{
+                                                background-color: #FF5200;
+                                            }
+
+/* .............................Profile Ends .................................. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////Mobile Responsive//////////////////////////////////////////..
+....................................................Mobile Responsive...........................................
+????????????????????????????????????????????????????Mobile Responsive????????????????????????????????????????????
+////////////////////////////////////////////////////Mobile Responsive//////////////////////////////////////////..
+....................................................Mobile Responsive...........................................
+????????????????????????????????????????????????????Mobile Responsive????????????????????????????????????????????
+////////////////////////////////////////////////////Mobile Responsive//////////////////////////////////////////..
+....................................................Mobile Responsive...........................................
+????????????????????????????????????????????????????Mobile Responsive????????????????????????????????????????????
+////////////////////////////////////////////////////Mobile Responsive//////////////////////////////////////////..
+....................................................Mobile Responsive...........................................
+????????????????????????????????????????????????????Mobile Responsive???????????????????????????????????????????? */
+
+
+@media only screen and (max-width: 876px) {
+  
+
+                             [class*="col-"] {width: 100%;}
+
+
+ /* .............................Header Starts.................................. */                            
+                             header{
+                                        display: block;
+                            }
+
+
+                            #logo{
+                                
+                           
+                              
+                            }
+
+                            .row  {
+
+                                flex-direction: column;
+                                position: relative;
+                               
+                            }
+
+                            .navbar-menu{
+                                display: none;
+                            }
+
+
+                            .icon{
+                                display: block;
+                                position: absolute;
+                                top: 16px;
+                                right: 10px;
+                                font-size: 1.5rem;
+                                color: #FF5200;
+                                padding: 2px 8px;
+                                border-radius: 5px;
+                            }
+
+                            
+                            .icon:hover{
+                                background-color: rgb(0, 0, 0, .2);
+                            }
+
+                           
+                            nav{
+                                
+                                display: block;
+                                text-align: center;
+                              
+                               background-color: #FF5200;
+
+                                
+                            }
+
+                            nav ul{
+                            
+                                display: block;
+                                margin-top: 0px;
+                                padding: 25px;
+                              
+                            }
+
+                           
+
+                            nav ul li{
+                                display: block;
+                                transition: all .4s;
+                                
+                            }
+                                
+                            nav ul li a {
+                                display: block;
+                                line-height: 50px;
+                                color: white!important;
+                                margin-top: 0;
+                                border-radius: 50px;
+                            }
+
+                            nav ul li a:hover{
+                                background-color: rgb(0, 0, 0, .2);
+                            }
+/* .............................Header Starts.................................. */               
+            
+
+
+
+
+
+/* .............................Profile Starts .................................. */
+
+                                        .profile{
+                                            background: url("images/profile2.jpg") no-repeat center;
+                                            -webkit-background-size: cover;
+                                            -moz-background-size: cover;
+                                            -o-background-size: cover;
+                                            height: 370px;
+                                            
+                                                                
+                                        }
+
+                                        .profile-contents{
+                                            padding: 7px 30px;
+                                            border-radius: 20px;
+                                            top: 74%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
+                                        
+                                            
+                                        }
+
+                                        .profile-contents p{
+                                        
+                                            padding: 5px 50px;
+                                            font-size: 1rem;
+                                            border-radius: 5px;
+                                        }
+
+                                        #name{
+                                            font-size: 1.2rem;
+                                        }
+
+                                        .profile-contents h1{
+
+                                            padding: 5px ;
+                                            font-size: 1.2rem;
+                                            border-radius: 5px;
+                                            margin-top: 8px;
+                                        }
+
+                                        .profile-contents button{
+                                            display: block;
+                                            font-size: 1.2rem; 
+                                        
+                                        }
+                                        .profile-contents button:hover{
+                                            background-color: #FF5200;
+                                        } 
+
+/* .............................Profile Ends .................................. */
+
+
+}
