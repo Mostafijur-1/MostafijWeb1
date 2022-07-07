@@ -239,7 +239,7 @@ about-skill{
 
 .skill-content{
     
-    line-height: 70px;
+    line-height: 60px;
     color: white;
     text-transform: uppercase;
     font-size: 20px;
@@ -259,7 +259,7 @@ about-skill{
     position: absolute;
     left: 0;
     top: 50px ;
-    height: 20px;
+    height: 10px;
     width: calc(100%);
     background-color: white;
     border-radius: 100px;
@@ -271,11 +271,11 @@ about-skill{
     position: absolute;
     left: 0;
     top: 50px ;
-    height: 20px;
+    height: 10px;
     width: 0;
     background-color: rgb(39, 39, 39);
     border-radius: 100px;
-    animation: all 3s 3s forwards;
+    animation: all 5s 3s forwards;
             
 }
 
@@ -397,7 +397,7 @@ about-skill{
 
 @media only screen and (max-width: 876px) {
   
-
+                            
                              [class*="col-"] {width: 100%;}
 
 
@@ -539,7 +539,14 @@ about-skill{
 /* .............................Profile Ends .................................. */
 
 
+.about-me p{
+   
+    
+    font-size: 1rem;
+    line-height: 30px;
+    
 
+}
 
 
 
