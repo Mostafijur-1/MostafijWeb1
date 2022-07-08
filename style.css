@@ -65,7 +65,15 @@ html{
 /* .............................Header Starts.................................. */
                                              
                                                 
-                                            
+                                            header{
+                                                position: sticky;
+                                                position: -webkit-sticky;
+                                                top: 0px;
+                                                z-index: 10;
+                                                background-color: rgba(255, 255, 255, .95);
+                                              
+                                              
+                                            }
                                                 .row{
                                                     display: flex;
                                                    
@@ -212,155 +220,225 @@ html{
 
 /* .............................Profile Ends .................................. */
 
-about-skill{
-    height: 350px;
-}
 
-.about-me p{
-    text-align: justify;
-    padding: 10px 50px;
-    font-size: 1.5rem;
-    line-height: 35px;
-    color: #0081f1; 
+/* .............................About-skills starts .................................. */
 
 
-}
-.skilldiv h2{
-    color: white;
-}
-.skilldiv hr{
-    background-color: #dadada;
-}
 
-.skilldiv{
-    background-color: #FF5200;
-}
+                        about-skill{
+                            height: 350px;
+                        }
+
+                        .about-me p{
+                            text-align: justify;
+                            padding: 10px 50px;
+                            font-size: 1.5rem;
+                            line-height: 35px;
+                            color: #0081f1; 
 
 
-.skill-content{
-    
-    line-height: 60px;
-    color: white;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0px 50px 50px;
-    
+                        }
+                        .skilldiv h2{
+                            color: white;
+                        }
+                        .skilldiv hr{
+                            background-color: #dadada;
+                        }
+
+                        .skilldiv{
+                            background-color: #FF5200;
+                        }
+
+
+                        .skill-content{
+                            
+                            line-height: 60px;
+                            color: white;
+                            text-transform: uppercase;
+                            font-size: 20px;
+                            font-weight: bold;
+                            padding: 0px 50px 50px;
+                            
+                        
+                        }
+                        .skill-content li{
+                            position: relative;
+                            font-weight: bold;
+                            
+                        }
+
+                        .skill-content li::before{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 50px ;
+                            height: 10px;
+                            width: calc(100%);
+                            background-color: white;
+                            border-radius: 100px;
+                                    
+                        }
+
+                        .skill-content li::after{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 50px ;
+                            height: 10px;
+                            width: 0;
+                            background-color: rgb(39, 39, 39);
+                            border-radius: 100px;
+                            animation: all 6s 3s forwards;
+                                    
+                        }
+
+
+                        .skill-content li.html::after{
+                            animation-name: html;
+                        }
+                            @keyframes html{
+                                to{
+                                    width: 97%;
+                                }
+                        }
+
+                        .skill-content li.css::after{
+                            animation-name: css;
+                        }
+                            @keyframes css{
+                                to{
+                                    width: 90%;
+                                }
+                        }
+
+                        .skill-content li.js::after{
+                            animation-name: js;
+                        }
+                            @keyframes js{
+                                to{
+                                    width: 85%;
+                                }
+                        }
+
+
+                        .skill-content li.bootstrap::after{
+                            animation-name: bootstrap;
+                        }
+                            @keyframes bootstrap{
+                                to{
+                                    width: 95%;
+                                }
+                        }
+
+                        .skill-content li.jquery::after{
+                            animation-name: jquery;
+                        }
+                            @keyframes jquery{
+                                to{
+                                    width: 70%;
+                                }
+                        }
+
+                        .skill-content li.react::after{
+                            animation-name: react;
+                        }
+                            @keyframes react{
+                                to{
+                                    width: 60%;
+                                }
+                        }
+
+                        .skill-content li.node::after{
+                            animation-name: node;
+                        }
+                            @keyframes node{
+                                to{
+                                    width: 50%;
+                                }
+                        }
+
+                        .skill-content li.express::after{
+                            animation-name: express;
+                        }
+                            @keyframes express{
+                                to{
+                                    width: 40%;
+                                }
+                        }
+
+                        .skill-content li.python::after{
+                            animation-name: python;
+                        }
+                            @keyframes python{
+                                to{
+                                    width: 85%;
+                                }
+                        }
+
+
+/* .............................About-skills Ends .................................. */
+
+
+/* .............................Service section starts .................................. */
+
+            .service{
+                background-color: #008BFF;
+                padding-top:10px;
+            }  
+
+            .service h2{
+                color: white;
+            }
+            .service hr{
+                background-color: #dadada;
+            }
+
+            .web , .program{
+            text-align: center;
+            padding: 15px 50px;
+            
+            }
+
+            .service img{
+                width: 300px;
+                margin: 15px auto;
+                display: block;
+                border-radius: 50%;
+                border: 5px solid #ffffff;
+                
+            }
+
+            .service h3{
+                font-size: 2rem;
+                color: white;a
+            }
+
+            .service p{
+                text-align: justify;
+                padding: 10px 0px;
+            }
+
+
+/* .............................Service section Ends .................................. */
+
+
+
+
+/* .portfolio img{
+    width: 300px;
    
 }
-.skill-content li{
-    position: relative;
-    font-weight: bold;
-    
-}
 
-.skill-content li::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50px ;
-    height: 10px;
-    width: calc(100%);
-    background-color: white;
-    border-radius: 100px;
-             
-}
+.portfolio li{
+   margin: 20px;
+   border: 5px solid #0081f1;
 
-.skill-content li::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50px ;
-    height: 10px;
-    width: 0;
-    background-color: rgb(39, 39, 39);
-    border-radius: 100px;
-    animation: all 5s 3s forwards;
-            
-}
+} */
 
 
-.skill-content li.html::after{
-    animation-name: html;
-}
-    @keyframes html{
-        to{
-            width: 97%;
-        }
-}
-
-.skill-content li.css::after{
-    animation-name: css;
-}
-    @keyframes css{
-        to{
-            width: 90%;
-        }
-}
-
-.skill-content li.js::after{
-    animation-name: js;
-}
-    @keyframes js{
-        to{
-            width: 85%;
-        }
-}
 
 
-.skill-content li.bootstrap::after{
-    animation-name: bootstrap;
-}
-    @keyframes bootstrap{
-        to{
-            width: 95%;
-        }
-}
 
-.skill-content li.jquery::after{
-    animation-name: jquery;
-}
-    @keyframes jquery{
-        to{
-            width: 70%;
-        }
-}
-
-.skill-content li.react::after{
-    animation-name: react;
-}
-    @keyframes react{
-        to{
-            width: 60%;
-        }
-}
-
-.skill-content li.node::after{
-    animation-name: node;
-}
-    @keyframes node{
-        to{
-            width: 50%;
-        }
-}
-
-.skill-content li.express::after{
-    animation-name: express;
-}
-    @keyframes express{
-        to{
-            width: 40%;
-        }
-}
-
-.skill-content li.python::after{
-    animation-name: python;
-}
-    @keyframes python{
-        to{
-            width: 85%;
-        }
-}
 
 
 
@@ -404,6 +482,7 @@ about-skill{
  /* .............................Header Starts.................................. */                            
                              header{
                                         display: block;
+                                        position: static;
                             }
 
 
@@ -539,20 +618,32 @@ about-skill{
 /* .............................Profile Ends .................................. */
 
 
-.about-me p{
-   
-    
-    font-size: 1rem;
-    line-height: 30px;
-    
+/* .............................About-skills starts .................................. */
 
+            .about-me p{
+
+                font-size: 1rem;
+                line-height: 30px;
+            }
+
+            .skill-content li::after{
+                animation: all 10s 5s forwards;
+            }
+
+/* .............................About-skills Ends .................................. */
+
+
+/* .............................Service starts .................................. */
+
+.service img{
+    width: 250px;
 }
 
+.service h3{
+    font-size: 1.7rem;  
+}
 
-
-
-
-
+/* .............................Service Ends .................................. */
 
 
 
