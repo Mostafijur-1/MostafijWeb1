@@ -30,6 +30,11 @@ h2{
     text-align: center;
     margin-top: 10px;
 }
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
 hr{
     width: 220px;
     margin: 0 auto;
@@ -59,6 +64,7 @@ html{
 .col-2{width: 50%;}
 .col-3{width: 75%;}
 .col-4{width: 100%;}
+.col-5{width: 33.3%;}
 
 
 
@@ -316,7 +322,7 @@ html{
                         }
                             @keyframes js{
                                 to{
-                                    width: 85%;
+                                    width: 70%;
                                 }
                         }
 
@@ -326,7 +332,7 @@ html{
                         }
                             @keyframes bootstrap{
                                 to{
-                                    width: 95%;
+                                    width: 90%;
                                 }
                         }
 
@@ -353,7 +359,7 @@ html{
                         }
                             @keyframes node{
                                 to{
-                                    width: 50%;
+                                    width: 75%;
                                 }
                         }
 
@@ -362,7 +368,7 @@ html{
                         }
                             @keyframes express{
                                 to{
-                                    width: 40%;
+                                    width: 70%;
                                 }
                         }
 
@@ -409,8 +415,9 @@ html{
             }
 
             .service h3{
-                font-size: 2rem;
-                color: white;a
+                
+                color: white;
+                
             }
 
             .service p{
@@ -422,31 +429,189 @@ html{
 /* .............................Service section Ends .................................. */
 
 
+/* .............................Portfolio section starts .................................. */
+
+#portfolio{
+    background: linear-gradient( #ffffff,#e21c0e);
+    padding: 10px;
+}
+
+.portfolio{
+    height: 400px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  input[type=number] {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
 
 
-/* .portfolio img{
-    width: 300px;
+
+/* .............................Portfolio section Ends .................................. */
+
+
+
+
+/* .............................Contact section starts .................................. */
+
+#contact{
+    background-color: hsl(19, 100%, 50%);
+    margin-top: -10px;
+    padding-top:10px;
+    
+   
+   
+}
+#contact h2{
+    color: white;
+}
+#contact hr{
+    background-color: #dadada;
+}
+
+/* .contact{
+    display: flex;
+} */
+
+.Map{
+    padding-left: 50px;
+  
+}
+.map{
+    width: 100%;
+    height: 319.5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px white;   
+   
    
 }
 
-.portfolio li{
-   margin: 20px;
-   border: 5px solid #0081f1;
-
-} */
 
 
+#email{
+    padding: 8px 35px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: larger;
+    border: none;
+    background-color: white;
+    color:  #008BFF;
+    
+}
+.contactForm{
+    padding-right: 50px;
+}
+
+
+textarea{
+    resize: none;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px white;
+    background-color: hsl(207, 100%, 50%);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+   
+    
+}
+
+.submit{
+    padding: 8px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: larger;
+    border: none;
+    background-color: #15202B;
+    color: white;
+    transition: .4s;   
+    
+}
+
+.submit:hover{
+    background-color: white;
+    color: black;
+}
+
+#fail{
+    display: none;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    
+}
+
+#success{
+    display: none;
+    position: absolute;
+    color:#ffffff ;
+    padding: 5px;  
+}
+#invalidEmail{
+    display: none;
+    position: absolute;
+    color:#000000 ;
+    padding: 5px;  
+}
 
 
 
+.social-icons{
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.social-icons li{
+    line-height: 2.4;
+}
+.social-icons li i{
+    color: white;
+}
+.social-icons li i:hover{
+    color: rebeccapurple;
+}
 
 
+.copyright{
+    background-color: rgba(0,0,0, 0.3);
+    margin-top: 50px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    color: gold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
-
-
+/* .............................Contact section Ends .................................. */
 
 
 
@@ -500,7 +665,10 @@ html{
                             }
 
                             .navbar-menu{
-                                display: none;
+                               
+                                max-height: 0;
+                                overflow: hidden;
+                                transition: max-height .3s ease-out;
                             }
 
 
@@ -627,7 +795,7 @@ html{
             }
 
             .skill-content li::after{
-                animation: all 10s 5s forwards;
+                animation: all 8s 3s forwards;
             }
 
 /* .............................About-skills Ends .................................. */
@@ -646,11 +814,62 @@ html{
 /* .............................Service Ends .................................. */
 
 
+/* .............................Contact starts .................................. */
+
+.contact{
+    text-align: center;
+    padding: 10px 50px ;
+
+}
+
+
+.Map{
+    padding: 0px 0px 30px 0px; 
+}
+.map{
+    height: 250px;  
+}
 
 
 
 
 
 
+
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    font-size: 2.5rem;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+.contactForm{
+   
+  padding: 0;
+
+}
+
+textarea{
+    resize: none;
+   
+}
+
+
+.copyright{
+    
+    margin-top: 30px;
+    height: 60px;
+    padding: 10px;
+    font-size: 1rem;
+    word-spacing: 0px;
+ 
+}
+
+
+
+
+/* .............................Contact Ends .................................. */
 
 }
