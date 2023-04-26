@@ -34,7 +34,7 @@
                                     
                                     <div class="col-3 navbar" >
                                     
-                                    <div class="navbar-menu">
+                                    <div class="navbar-menu ">
 
                                 <nav>
                                     <ul>
@@ -49,7 +49,7 @@
                                     </div>
 
                                     <a class="icon">
-                                        <i class="fa fa-bars" onclick="navIcon()"></i>
+                                        <i class="fa fa-bars"></i>
                                     </a>
                                     
 
@@ -73,7 +73,7 @@
 
 <!-- .............................Profile Starts .................................. -->
 
-        <section id="" >
+        <section id="profile" >
 
             <div class="profile">
             
@@ -109,10 +109,10 @@
                                     <div class="col-2 about-me" id="about">
 
                                 <h2> About me</h2> <hr>
-                                <p>I am Mostafijur Rahman. I am studying in Islamic University of Technology(IUT). 
-                                    I am expert in HTML, CSS, JavaScript, Bootstrap, Jquery and also have
-                                    knowledge of React JS, Node Js, Express JS and Python languages. I can create any Website 
-                                    professionally using these. I created this website using only HTML, CSS and Javascript. </p>
+                                <p>I am Mostafijur Rahman. I am studying at <b>Islamic University of Technology(IUT)</b>. 
+                                    I am experienced with HTML, CSS, JavaScript, Bootstrap, Jquery, React JS, Node Js, Express JS and also have
+                                    knowledge of C, C++ and Python languages. I can create any Website professionally.
+                                  I created this website using only HTML, CSS and Javascript. </p>
 
                                     </div>
 
@@ -125,12 +125,12 @@
                                     <ul>
                                         <li class="html">HTML (97%)</li>
                                         <li class="css">CSS (90%)</li>
-                                        <li class="js">JavaScript (85%)</li>
-                                        <li class="bootstrap">Bootstrap (95%)</li>
+                                        <li class="js">JavaScript (70%)</li>
+                                        <li class="bootstrap">Bootstrap (90%)</li>
                                         <li class="jquery">Jquery(70%)</li>
                                         <li class="react">React js (60%)</li>
-                                        <li class="node">Node js (50%)</li>
-                                        <li class="express">Express js(40%)</li>
+                                        <li class="node">Node js (75%)</li>
+                                        <li class="express">Express js(70%)</li>
                                         <li class="python">Python (85%)</li>
                                     </ul>
                                 </div>
@@ -179,7 +179,7 @@
                             </div>
                             <div class="">
                                 <h3>Programming</h3>
-                                <p>I will solve any kinds of problems using programmming languages.In terms of programmming languages I will specially use Javascript, Python and C programming.  </p>
+                                <p>I will solve any kinds of problems using programmming languages. In terms of programmming languages I will specially use Javascript, Python and C programming.  </p>
                             </div>
 
 
@@ -197,55 +197,42 @@
 
 
 
- <!-- <section id="portfolio">
+
+<!-- /* .............................Portfolio section starts .................................. */ -->
+
+<section id="portfolio">
 
     <h2> Portfolio</h2> <hr>
 
-<div class="portfolio">
-  <div class="row">
-<div class="col-1">
-    <img src="images/portfolio1.png" alt="">
-</div>
-<div class="col-1">
-    <img src="images/portfolio2.png" alt="">
-</div>
-<div class="col-1">
-    <img src="images/portfolio3.png" alt="">
-</div>
-</div>
+    <div class="portfolio">
 
+        <table>
+            <tr>
+              <th>Decimal</th>
+              <th>Binary</th>
+              <th>Octal</th>
+              <th>Hexadecimal</th>
+            </tr>
+            <tr>
+              <td><input type="number" id="decimal-input" value="10" oninput="updateValues()" /></td>
+              <td id="binary-output">1010</td>
+              <td id="octal-output">12</td>
+              <td id="hexadecimal-output">A</td>
+            </tr>
+          </table>
+          
+          
 
-<div class="row">
-    <div class="col-1">
-        <img src="images/portfolio4.png" alt="">
-    </div>
-    <div class="col-1">
-        <img src="images/portfolio5.png" alt="">
-    </div>
-    <div class="col-1">
-        <img src="images/portfolio6.png" alt="">
-    </div>
     </div>
 
 
- </section>
- -->
+
+</section>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- /* .............................Portfolio section Ends .................................. */ -->
 
 
 </main>
@@ -256,6 +243,74 @@
 
 
 <footer>
+
+
+
+<!-- /* .............................Contact section starts .................................. */ -->
+
+
+<section id="contact">
+
+    <h2> Contact</h2> <hr>
+
+<div class="contact">
+
+    <div class="row">
+        
+        <div class="col-5 Map">
+
+            <div id="map" class="map"></div>
+
+    </div>
+
+        
+
+
+
+
+        <div class="col-5">
+           
+            <div class="social-icons">
+             <li><a href="https://www.facebook.com/profile.php?id=100083958990925" target="_blank"><i class=" fa-brands fa-facebook"></i></a></li>
+             <li><a href="https://www.youtube.com/channel/UCmyFJzDrTnOhy7tU-7QGv6Q" target="_blank"><i class=" fa-brands fa-youtube"></i></a></li>
+             <li><a href="https://github.com/Mostafijur-1/" target="_blank"><i class=" fa-brands fa-github"></i></a></li>
+            </div>
+ 
+ 
+         </div>
+
+
+    <div class="col-5">
+        <div class="contactForm">
+        
+        <form action="https://formsubmit.co/el/hapahu" onsubmit="return false" method="POST">
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            <textarea name="msg" id="msg" cols="100" rows="10" placeholder="Write Your Message and Send it to Us" required></textarea>
+            <button class="submit" type="submit" onclick="message()">SEND</button>
+        </form>
+        
+      </div>
+       <h1 id="fail">!!! Fields Can't be Empty</h1>
+       <h1 id="success">Message Sent Successfully</h1>
+       <h1 id="invalidEmail">!!! Invalid Email Address</h1>
+
+
+      </div>
+
+    </div>
+</div>
+
+<div class="copyright">
+    <p>All rights preserve. Depeloped by &copy; Mostafijur Rahman</p>
+</div>
+
+
+</section>
+
+
+
+
+<!-- /* .............................Contact section Ends .................................. */ -->
 
 
 
@@ -270,6 +325,7 @@
 
 
 <script src="main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDsTWacRIjgbA6PoghvwVIfamjA4S6kQg&callback=myMap"></script>
 
 </body>
 </html>
